@@ -1,10 +1,11 @@
 GO111MODULE := on
 BIN := bin/server
 
-CLIENT_ID ?= 0YO3rhFC1cFvdcjG6vW3m0naHA5PVVvR
+SHELL := $(shell which bash)
+VERBOSE ?= -verbose
 
 run: build
-	$(BIN) -client-id $(CLIENT_ID)
+	source .env && $(BIN) $(VERBOSE)
 
 build:
 	GO111MODULE=on go mod tidy

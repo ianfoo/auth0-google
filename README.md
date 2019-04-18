@@ -16,6 +16,11 @@ by anyone other than the owner. You probably ought not to store refresh tokens
 on the filesystem anyway. The point is, this is just a demo, and a work in
 progress at that.
 
+# Notes
+
+Use `.env.sample` to create `.env` populated with the appropriate values,
+as described in the sample file, if you want to run the server with make.
+
 # To Do
 
 * Hook the webserver back up.
